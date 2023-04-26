@@ -22,7 +22,7 @@ public class Exercicio01 {
         System.out.println("Idade: " + pessoa.getIdade());
         System.out.println("Peso: " + pessoa.getPeso());
         System.out.println("Altura: " + pessoa.getAltura());
-        System.out.println("IMC: " + pessoa.setIMC());
+        System.out.println("IMC: " + pessoa.IMC());
     }
 
     public static class Pessoa {
@@ -30,14 +30,13 @@ public class Exercicio01 {
         private int idade;
         private double peso;
         private double altura;
-        private double imc;
 
         public Pessoa(String nome, int idade, double peso, double altura) {
             this.nome = nome;
             this.idade = idade;
             this.peso = peso;
             this.altura = altura;
-            this.imc = imc;
+
         }
 
         public String getNome() {
@@ -72,7 +71,7 @@ public class Exercicio01 {
             this.altura = altura;
         }
 
-        public double setIMC(){
+        public double IMC(){
            return peso/(Math.pow(altura,2));
         }
     }
